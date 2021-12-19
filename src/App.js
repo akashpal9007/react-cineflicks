@@ -12,14 +12,17 @@ import Error404 from "./Components/Pages/Error404";
 function App() {
   return (
     <BrowserRouter>
+    <Header></Header>
     <div className="app">
+    <Container>
       <Routes>
-        <Route path='/' element={<Header />}/>
+        <Route path='/' element={<Trending />}/>
         <Route path='/movies' element={<Movies />}/>
         <Route path='/tvseries' element={<TVSeries />}/>
         <Route path='/search' element={<Search />}/>
         <Route path="*" element={<Error404 />}/>
       </Routes>
+      </Container>
     </div>
     </BrowserRouter>
   );

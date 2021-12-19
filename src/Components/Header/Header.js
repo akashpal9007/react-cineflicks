@@ -10,7 +10,7 @@ const Header = ({path}) => {
     return(
     <>       
         <nav className="navbar">
-            <ul className="logo">Name</ul>
+            <span onClick={()=>window.scroll(0,0)} className="logo">Name</span>
 
             <Button className="movies">
             <Link to={"/movies"}>
